@@ -1,5 +1,6 @@
 // scripts.js
 
+// This function generates a random color code
 document.addEventListener('DOMContentLoaded', () => {
     const themeLinks = document.querySelectorAll('.dropdown-content a');
 
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.className = theme;
         });
     });
-
+    
     const dropdown = document.querySelector('.dropdown');
     const dropdownContent = document.querySelector('.dropdown-content');
     const dropbtn = document.querySelector('.dropbtn');
