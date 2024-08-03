@@ -1,10 +1,15 @@
 /* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Add this line to prevent scrolling */
 }
 
 .navbar {
@@ -37,6 +42,7 @@ h2 {
 }
 
 .dropdown {
+    padding-top: 40px;
     position: relative;
     display: inline-block;
 }
@@ -44,8 +50,9 @@ h2 {
 .dropbtn {
     background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 47px;
     font-size: 16px;
+    border: 2px solid #000000 !important;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -67,7 +74,6 @@ h2 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
-    overflow: hidden;
 }
 
 .dropdown-content a {
@@ -130,4 +136,51 @@ h2 {
 .preview-btn:hover {
     background-color: #0056b3;
     transform: scale(1.1);
+}
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        overflow: auto; /* Allow scrolling on mobile */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-right a {
+        display: block;
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    .buttons-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .preview-btn {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Adjust margin for spacing */
+    }
+
+    .card {
+        width: 90%; /* Make cards nearly full width */
+        margin-bottom: 10px; /* Adjust margin for spacing */
+    }
 }
