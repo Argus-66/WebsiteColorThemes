@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
+
+// This function generates a random color code
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownBtn = document.getElementById('dropdownBtn');
     const dropdownLinks = document.querySelectorAll('.dropdown-content a');
