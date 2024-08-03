@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
+    // Function to toggle the dropdown menu on small screens
     const dropdown = document.querySelector('.dropdown');
     const dropdownContent = document.querySelector('.dropdown-content');
     const dropbtn = document.querySelector('.dropbtn');
